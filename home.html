@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header header__home">
+      <div class="header__container container">
+        <nav class="header__navigation">
+          <a href="#" class="header__logo link">
+            <img src="./img/film.svg" class="header__logo_icon" alt="logo" />
+            <h1 class="header__title">Filmoteka</h1>
+          </a>
+
+          <div class="header__buttons_wrapper">
+            <button class="header__btn current-button">HOME</button>
+            <a href="./library.html">
+              <button class="header__btn">MY LIBRARY</button>
+            </a>
+          </div>
+        </nav>
+        <div class="header__search_wrapper">
+          <form class="header__form">
+            <input
+              type="text"
+              class="header__input"
+              name="query"
+              placeholder="Movie search"
+            />
+            <button type="submit" class="header__search">Search</button>
+          </form>
+
+          <!-- Сюда на ошибку можно добавлять и убирать класс is-hidden  -->
+          <span class="header__error"
+            >Search result not successful. Enter the correct movie name and try
+            again</span
+          >
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
